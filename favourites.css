@@ -1,0 +1,266 @@
+*{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    font-family: 'Poppins','sans-serif';
+    text-decoration: none;
+    transition:all .2s linear;
+    list-style:none;
+    font-weight:500;
+    outline: none;
+    border:none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    background-image: url(assets/pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    height:10vh;
+    width:100vw;
+    color:white;
+}
+
+nav{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    /* background-color:rgb(197, 230, 230); */
+}
+
+nav a{
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .fa{
+    font-size:1.6rem;
+    cursor:pointer
+}
+
+.nav-left{
+    width:20%;
+    height:100%;
+    /* padding:1rem; */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.nav-left img{
+    height:95%;
+    width:8rem;
+    border-radius:100%;
+    border:2px solid white;
+    cursor: pointer;
+}
+
+.nav-left a{
+    font-size: 1.4rem;
+    margin:0 .2rem;
+    height:100%;
+}
+
+.nav-right a:hover{
+    font-size:1.6rem; 
+    color:red;
+    font-weight: bold;
+    
+}
+
+.nav-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:30%;
+    font-size: 2rem; 
+    height:100%;
+}
+
+.nav-center h1{
+    color:red;
+}
+
+
+.nav-right{
+    width:20%;
+    height:100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.nav-right{
+    width:20%;
+    height:100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-color: antiquewhite;
+   
+}
+
+.nav-right a{
+    color:white;
+    transition:all .3s ease;
+    height:100%;
+    width: 100%;
+}
+
+.nav-right .red-heart{
+    font-size:3rem !important;
+}
+
+
+/*header ends here */
+
+
+
+/*main starts here */
+main{
+    min-height:90vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+
+.search-results-container{
+    width:80%;
+    min-height:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap; 
+    /* margin-top: 2rem; */
+}
+
+.search-results-li{
+    width: 20%;
+    height:28rem;
+    margin:2rem 2rem;
+    background-color:white;
+    border:3px solid transparent;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+.search-results-li:hover{
+    box-shadow: 4px 4px 9px rgb(181, 179, 179);
+    transform: scale(1.1);
+    transition:all .2s linear;
+    border:3px solid white;
+}
+
+.search-results-img{
+    height:70%;
+    width:100%;
+}
+
+.fa-heart{
+    margin-top:.3rem;
+    color:grey;
+    margin-right:2rem;
+}
+
+
+/*Red heart */
+
+.red-heart{
+    color:red;
+    animation-name:pumping;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+
+
+
+/*MEDIA WIDTH 1000PX */
+@media only screen and (max-width:1000px) {
+    .search-results-li{
+        min-width:27%!important;
+    }
+}
+
+/* MEDIA WIDTH 800PX */
+@media only screen and (max-width:800px){
+    .search-results-li{
+        width: 40% !important;
+        height:28rem;
+        margin-top:3rem;
+        /* margin-right:1rem; */
+
+        
+    }
+    
+}
+
+/*MEDIA WIDTH 600PX */
+
+@media only screen and (max-width:500px){
+
+    html{
+        font-size: 40%;
+    }
+
+    .search-results-li{
+        width: 90%!important;
+        height:28rem;
+        margin-top:3rem;
+        /* margin-right:1rem; */
+    }
+    
+    .nav-left{
+        font-size: 1vmin !important;
+        width:30%;
+    }
+
+    .nav-left img{
+        height:90% !important;
+        width:10rem;
+    }
+
+    .nav-right{
+        width:0;
+    }
+
+    .nav-center{
+        width:50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top:2rem;
+        height: 50%;
+      
+    }
+
+    .nav-right{
+        width:10%;
+        color:red;
+    }
+
+    .nav-center input{
+        width:80%;
+    } 
+
+    .fa-heart{
+        font-size:2rem!important;
+    }
+}
